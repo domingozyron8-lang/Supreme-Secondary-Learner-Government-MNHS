@@ -16,16 +16,14 @@
         
 
         /* --- 2. HEADER (LOGO LEFT, MENU RIGHT) --- */
+       
         header {
-            background-color: darkred;
-            height: 70px;
-            display: flex;
-            justify-content: space-between; /* Ito ang naghihiwalay sa logo at menu */
-            align-items: center;
-            padding: 0 5%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    /* <--- ITO ANG DINAGDAG. Pag hindi na kasya ang menu, kusa itong bababa */
+    padding: 10px 5%;
+}
         }
 
         .logo-section { 
@@ -96,11 +94,15 @@
             display: block; 
             
         }
-        .glass-container  { 
-            background: rgba(255, 255, 255, 0.9); 
-            padding: 30px;
-            border-radius: 30px; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    .glass-container { 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 30px; 
+    max-width: 900px;    /* Limit sa laptop */
+    width: 95%;         /* Nag-iiwan ng konting space sa gilid pag sa phone */
+    margin: auto;       /* Palaging nasa gitna */
+}
+}
             
             
        }
