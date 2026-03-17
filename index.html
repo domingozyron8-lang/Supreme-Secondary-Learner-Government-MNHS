@@ -107,31 +107,31 @@ Yan Yung code
         from { 
                 opacity: 0;
                 transform: translateY(5px);
-            } 
-        to { opacity: 1;
+            }  to { opacity: 1;
                   transform: translateY(0); 
                  } }
 
-        .glass-container { 
+        ..glass-container { 
+    /* Kulay at Glass Effect */
     background: rgba(255, 255, 255, 0.95);  
     padding: 40px;
     border-radius: 25px; 
     
-    /* Gagamit tayo ng width: 90% para sa mobile */
-    width: 90%; 
-    /* Limitahan pa rin natin sa 800px para sa desktop */
-    max-width: 800px; 
-    
-    margin: 20px auto;
+    /* Responsive Sizing */
+    width: 90%;           /* Kakain ng 90% ng screen sa Mobile */
+    max-width: 800px;     /* Hindi lalampas ng 800px sa Desktop */
+    margin: 20px auto;    /* Center ang box */
     
     /* Ang iyong Border */
     border: 6px solid pink; 
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     text-align: center;
     
-    /* Box-sizing para hindi lumagpas ang padding sa border */
+    /* Importante para sa Mobile */
     box-sizing: border-box; 
-        }
+    overflow-wrap: break-word; /* Para hindi lumampas ang mahabang text */
+}
+
         }
         .hero-img {
             width: 100%;
