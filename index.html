@@ -107,21 +107,30 @@ Yan Yung code
         from { 
                 opacity: 0;
                 transform: translateY(5px);
-            } to { opacity: 1;
+            } 
+        to { opacity: 1;
                   transform: translateY(0); 
                  } }
 
         .glass-container { 
-            background: rgba(255, 255, 255, 0.95);  
-            padding: 40px;
-            border-radius: 25px; 
-            max-width: 800px; 
-            margin: auto;
-            
-            /* Dito nakalagay ang Border ng bawat Page */
-            border: 6px solid pink; 
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            text-align: center;
+    background: rgba(255, 255, 255, 0.95);  
+    padding: 40px;
+    border-radius: 25px; 
+    
+    /* Gagamit tayo ng width: 90% para sa mobile */
+    width: 90%; 
+    /* Limitahan pa rin natin sa 800px para sa desktop */
+    max-width: 800px; 
+    
+    margin: 20px auto;
+    
+    /* Ang iyong Border */
+    border: 6px solid pink; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    
+    /* Box-sizing para hindi lumagpas ang padding sa border */
+    box-sizing: border-box; 
         }
         }
         .hero-img {
