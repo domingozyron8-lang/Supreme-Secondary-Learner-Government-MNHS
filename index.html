@@ -266,85 +266,55 @@
                 padding: 15px; 
             }
         }
-       .facebook-section {
+       /* Center the whole section */
+.facebook-section {
     text-align: center;
-    margin-top: 30px;
+    color: white;
+    font-family: Arial, sans-serif;
     padding: 20px;
 }
 
-.fb-section p {
-    color: black;
-    margin-bottom: 15px;
-    font-family: sans-serif;
+.facebook-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
+/* This makes them side-by-side */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers buttons */
+    gap: 15px;              /* Creates the space between them */
+    flex-wrap: wrap;        /* Allows them to stack on very small phones */
+}
+
+/* Style for both buttons */
+.fb-button, .IG-button {
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;    /* Makes them rounded like the picture */
+    font-weight: bold;
+    min-width: 150px;
+    transition: transform 0.2s, opacity 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+/* Facebook Blue */
 .fb-button {
-    background-color: blue;
-    color: white !important;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: right;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background-color: #3b5998;
 }
 
-.fb-button:hover {
-    background-color: #145dbf;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-}
-
-.fb-button i {
-    margin-right: 10px;
-    font-size: 20px;
-}
-        t-align: center;
-    margin-top: 30px;
-    padding: 20px;
-        }
-       . Instagram-section {
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-}
-
-. Instagram-section p {
-    color: black;
-    margin-bottom: 15px;
-    font-family: sans-serif;
-}
-
+/* Instagram Purple/Magenta from your image */
 .IG-button {
-    background-color: light violet;
-    color: white !important;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background-color: #830a4e; 
 }
 
-.IG-button:hover {
-    background-color: #145dbf;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+/* Hover effect */
+.fb-button:hover, .IG-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
 }
 
-.IG-button i {
-    margin-right: 10px;
-    font-size: 20px;
-}
-        t-align: center;
-    margin-top: 30px;
-    padding: 20px;
-        }
-         
         footer {
             text-align: center; 
             padding: 25px;
@@ -549,16 +519,20 @@ to better serve its stakeholders.</p>
     </div>
 <div class="facebook-section">
     <p>Follow us for more updates:</p>
-    <a href="https://www.facebook.com/share/1EYopy2LkV/" target="_blank" class="fb-button">
-        <i class="fab fa-facebook"></i> Open Facebook
-    </a>
-</div>
-    <div class="instagram-section">
-    <p>Follow us for more updates:</p>
-    <a href="https://www.instagram.com/depedtayo_muntindilawnhs_sslg?igsh=MWhvcTN1bmFtbXBsaA==" target="_blank" class="IG-button">
-        <i class="ina in-instagram"></i> Open Instagram 
-    </a>
+    
+    <div class="button-container">
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/share/1EYopy2LkV/" target="_blank" class="fb-button">
+            Open Facebook
+        </a>
+
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/depedtayo_muntindilawnhs_sslg?igsh=MWhvcTN1bmFtbXBsaA==" target="_blank" class="IG-button">
+            Open Instagram
+        </a>
     </div>
+</div>
+
     
     <footer><p>&copy; 2026 MNHS SSLG | Supreme Secondary Learner Government</p></footer>
 
