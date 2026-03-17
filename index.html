@@ -84,41 +84,97 @@ nav ul li a:hover {
 
 .dropdown-menu { 
     display: none; 
-    position: absolute;
-    background: white; 
-    top: 100%;
-    right: 0;
-    min-width: 150px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    overflow: hidden;
-}
-.dropdown-menu a {
-color:#333;
-padding:12px;
-display: block;
-text-decoration:none;
-border-bottom:1px solid yellow;
-.show {
-    display: block;
-}
+Body { 
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0; 
+            background: url('https://image2url.com/r2/default/images/1773753928226-76c65ded-3def-4446-a0cb-977c8d12b426.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
 
-/* Page Section Fix */
-.page {
-    display: none; 
-    padding: 20px 5%; 
-    width: 100%;
-    min-height: 80vh;
-    text-align: center;
-    box-sizing: border-box
+        header {
+            background-color: solid pink;
+            min-height: 100px;
+            weidth: 190px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px 5%;
+            position: sticky;
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+        .logo-section { 
+            display: flex; 
+            align-items: center;
+            color: white;
+            gap: 10px; cursor: pointer;
+        }
+        .logo-section img { 
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: white;
+            object-fit: cover;
+        }
+    {
+        nav-width:70%;
 }
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            gap: 18px; 
+            margin: 0; 
+            padding: 0;
+        }
+        nav ul li a {
+            color: darkred; 
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px; 
+            cursor: pointer; 
+            transition: 0.3s;
+        }
+        nav ul li a:hover { color: #ffd700; }
 
-.active { 
-    display: block; 
-    animation: fadeIn 0.2s;
-}
+        .dropdown {
+            position: relative; 
+        }
+        .dropdown-menu { 
+            display: none; 
+            position: absolute;
+            background: white; 
+            top: 35px;
+            right: 0;
+            min-width: 170px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .dropdown-menu a {
+            color: #333; padding:
+                12px; display: block;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+        .show {
+            display: block;
+        }
 
-@keyframes fadeIn { 
+        .page {
+            display: none; 
+            padding: 35px 5%; 
+            min-height: 80vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .active { 
+            display: block; 
+            animation: fadeIn 0.4s;
+        }
+        @keyframes fadeIn
     from { opacity: 0; }
     to { opacity: 1; }
     }
